@@ -9,5 +9,5 @@ export const PlaceOrder = () => {
     }
     
     document.addEventListener("click", handleSaveOrder)
-    return `<button id="orderButton">Create Custom Order</button>`
+    return `<button id="orderButton" type="button" class="btn btn-dark">Create Custom Order</button>`
 }

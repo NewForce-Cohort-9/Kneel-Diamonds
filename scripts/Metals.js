@@ -19,7 +19,11 @@ export const MetalOptions = async () => {
     const divStringArray = await metals.map( //spending money
         singleMetal => {
             return `<div>
-            <input type='radio' name='metal' value='${singleMetal.id}' /> ${singleMetal.metal}
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" name='metal' value='${singleMetal.id}'>
+            <label class="form-check-label" for="flexRadioDefault1">
+            ${singleMetal.metal}
+            </label>
+            
             </div>
             `
         }

@@ -16,20 +16,29 @@ export const render = async () => {
     const composedHTML = `
     <h1>Kneel Diamonds</h1>
 
-    <article class="choices">
+    <div class="container text-center">
+  <div class="row justify-content-start">
+    
+    <div class="col align-self-start">
         <section class="choices__metals options">
             <h2>Choose Your Metal:</h2>
             ${metalHTML}
         </section>
+        </div>
+        <div class="col align-self-start">
         <section class="choices__sizes options">
             <h2>Choose Your Style:</h2>
             ${styleHTML}
         </section>
+        </div>
+        <div class="col align-self-start">
         <section class="choices__styles options">
         <h2>Choose Your Size:</h2>
         ${sizeHTML}
         </section>
-    </article>
+        </div>
+        </div>
+        </div>
 
    
 
@@ -42,6 +51,7 @@ export const render = async () => {
         <h2>Custom Jewelry Orders</h2>
         ${orderHTML}
     </article>
+ 
     `
 
     mainContainer.innerHTML = composedHTML
